@@ -17,6 +17,7 @@ import Fonts
 @import url(font-awesome.min.css);
 @import url(owl.carousel.min.css);
 
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 /*--------------------------------------------------------------------- 
 basic 
 ---------------------------------------------------------------------*/
@@ -1060,4 +1061,62 @@ ul.email li i {
 
 .inner_page .contact {
      margin-top: 90px;
+}
+
+/* Buy.html page styling*/
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background: transparent;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;
+  /*margin-left: 3%;  */
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+
+#credit_card:checked ~ .panels #credit_card-panel,
+#PayPal:checked ~ .panels #PayPal-panel,
+#Crypto:checked ~ .panels #Crypto-panel{
+  display:block;
+}
+#credit_card:checked ~ .tabs #credit_card-tab,
+#PayPal:checked ~ .tabs #PayPal-tab,
+#Crypto:checked ~ .tabs #Crypto-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
 }
