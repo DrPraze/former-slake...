@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	    <!-- basic -->
+	<!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
@@ -81,22 +81,45 @@
                                 <div class="title text_align_center">
                                     <h2>BUY SLAKES</h2>
                                 </div>
+                                <div class="warpper">
+                                	<input class="radio" id="credit_card" name="group" type="radio" checked>
+                                	<input class="radio" id="PayPal" name="group" type="radio">
+                                	<input class="radio" id="Crypto" name="group" type="radio">
+                                	<p class="text_align_center">Pay with:</p>
+                            		<div class="tabs text_align_center">
+                            			<label class="tab" id="credit_card-tab" for="credit_card">Credit card</label>
+                            			<label class="tab" id="PayPal-tab" for="PayPal">PayPal</label>
+                            			<label class="tab" id="Crypto-tab" for="Crypto">Crypto</label>
+                            		</div>
+                            		<div class="panels">
+                            			<div class="panel" id="credit_card-panel">
+                            				<div class="panel-title">Pay with credit card</div>
+                            				<input type="text" name="card_number" placeholder="Your credit card number">
+
+                            			</div>
+                            			<div class="panel" id="PayPal-panel">
+                            				<div class="panel-title">Pay with PayPal</div>
+                            				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            			</div>
+                            			<div class="panel" id="Crypto-panel">
+                            				<div class="panel-title">Pay with Crypto</div>
+                            				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            			</div>
+                            		</div>
                             </div>
-                        </div>
                         <div class="row d_flex">
                             <div class="col-md-10 offset-md-1">
-                            	<div class="buyslakes_text text_align_left">
+                            	<!-- <div class="buyslakes_text text_align_left">
                             		<i><img src="static/images/graf2.jpg" alt="#"/></i>
                             		<h3>SLAKE</h3>
                             		<span>Slakecoin Tokens</span>
-                            	</div>
+                            	</div> -->
                             	<div>
                             		<!-- Buying with API goes here -->
-                            	</div>
-                            </div>
-                            <div class="col-md-9">
-                            	<div class="buyslakes_text text_align_center">
-                            		<p>Slakenet is the fastest growing communication company in Africa</p>
                             	</div>
                             </div>
                         </div>
@@ -117,32 +140,34 @@
                                 <div class="title text_align_center">
                                     <h2>BUY AIRTIME</h2>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row d_flex">
-                        	<div class="col-md-12">
-                            	<div class="buyslakes_text text_align_center">
-                            		<p>Choose your Cellular Provider:</p>
-                            	</div>
-                            </div>
-                            <div class="col-md-10 offset-md-1">
-                            	<div class="buyslakes_text text_align_left">
-                            		<i><img src="static/images/graf2.jpg" alt="#"/></i>
-                            		<h3>SLAKE</h3>
-                            		<span>Slakecoin Tokens</span>
-                            	</div>
-                            </div>
-                            <div class="col-md-9">
-                            	<div class="buyslakes_text text_align_center">
-                            		<p>Slakenet is the fastest growing communication company in Africa</p>
-                            	</div>
-                            </div>
-                        </div>
+                        	<div class="buyslakes_text text_align_center">
+                            		<p>Choose your Cellular Network:</p>
+                            		<form>
+                            			<select name="networks" onchange="combo(this, 'network')">
+                            				<option>9 Mobile</option>
+                            				<option>Airtel</option>
+                            				<option>GLO</option>
+                            				<option>MTN</option>
+                            			</select>
+                            		</form>
+                            		<p>1 SLAKE is 1 Naira</p>
+                        	</div>
+                        		<!-- <div style="width: 50%; float: left;" class="col-md-12">
+                        			<div class="col-md-10 offset-md-1">
+                        				<div class="buyslakes_text text_align_left">
+                        					<i><img src="static/images/graf2.jpg" alt="#"/></i>
+                        					<h3>SLAKE</h3>
+                        					<span>Slakecoin Tokens</span>
+                            		</div>
+                            	</div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
     <!-- footer -->
     <footer>
         <div class="footer">
@@ -185,11 +210,11 @@
                         <div class="Informa helpful">
                             <h3>Useful Links</h3>
                             <ul>
-                                <li><a href="#">whitepaper</a>
+                                <li><a href="whitepaper.pdf" target="_blank">whitepaper</a>
                                 </li>
-                                <li><a href="https://slakenet.blogspot.com/">Blog</a>
+                                <li><a href="https://slakenet.blogspot.com/" target="_blank">Blog</a>
                                 </li>
-                                <li><a href="https://slakenet.blogspot.com/">Release date</a>
+                                <li><a href="https://slakenet.blogspot.com/" target="_blank">Release date</a>
                                 </li>
                                 <li><a>Praise James</a>
                                 </li>
@@ -235,7 +260,7 @@
                <div class="container ">
                   <div class="row ">
                      <div class="col-md-12 ">
-                        <p>© 2022 All Rights Reserved.<a href="#"> Slakenet</a></p>
+                        <p>© 2022. All Rights Reserved.<a href="#"> Slakenet</a></p>
                      </div>
                   </div>
                </div>
